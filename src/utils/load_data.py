@@ -10,7 +10,7 @@ SAMPLES_PER_TRIAL = {
 
 
 # Setup logging
-LOG_DIR = "../../outputs/logs"
+LOG_DIR = "../outputs/logs"
 logging.basicConfig(
     filename=os.path.join(LOG_DIR, "load_data.log"),
     filemode='a',
