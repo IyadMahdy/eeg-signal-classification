@@ -10,7 +10,7 @@ SAMPLES_PER_TRIAL = {
 
 
 # Setup logging
-LOG_DIR = "../../outputs/logs"
+LOG_DIR = "../outputs/logs"
 logging.basicConfig(
     filename=os.path.join(LOG_DIR, "load_data.log"),
     filemode='a',
@@ -62,7 +62,7 @@ def load_eeg_file(base_path, task, dataset, subject_id, session):
     pd.DataFrame
         EEG data.
     """
-    path = os.path.join(base_path, task, dataset, f"S{subject_id}", str(session), 'EEGdata.csv')
+    path = os.path.join(base_path, task, dataset, f"{subject_id}", str(session), 'EEGdata.csv')
     logging.info(f"Loading EEG data from {path}")
     try:
         return pd.read_csv(path)
