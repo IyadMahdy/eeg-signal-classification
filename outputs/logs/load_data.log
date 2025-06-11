@@ -1,0 +1,23 @@
+2025-06-11 22:01:07,302 - INFO - Loading metadata from ../data/
+2025-06-11 22:01:07,304 - ERROR - Failed to load metadata: [Errno 2] No such file or directory: '../data/train.csv'
+2025-06-11 22:01:15,418 - INFO - Loading metadata from ../data/raw
+2025-06-11 22:01:50,627 - INFO - Loading metadata from ../data/raw
+2025-06-11 22:06:40,881 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-06-11 22:06:40,882 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-06-11 22:14:32,174 - INFO - Loading trial 1 from session 1 for subject S20
+2025-06-11 22:14:32,174 - INFO - Loading EEG data from ../data/raw\MI\train\S20\1\EEGdata.csv
+2025-06-11 22:14:32,325 - INFO - Extracted trial 1 from session 1 for subject S20
+2025-06-11 22:15:06,587 - INFO - Loading trial 2 from session 1 for subject S20
+2025-06-11 22:15:06,587 - INFO - Loading EEG data from ../data/raw\MI\train\S20\1\EEGdata.csv
+2025-06-11 22:15:06,772 - INFO - Extracted trial 2 from session 1 for subject S20
+2025-06-11 22:15:11,092 - INFO - Loading trial 5 from session 1 for subject S20
+2025-06-11 22:15:11,094 - INFO - Loading EEG data from ../data/raw\MI\train\S20\1\EEGdata.csv
+2025-06-11 22:15:11,246 - INFO - Extracted trial 5 from session 1 for subject S20
+2025-06-11 22:15:16,017 - INFO - Loading trial 1 from session 1 for subject S20
+2025-06-11 22:15:16,017 - INFO - Loading EEG data from ../data/raw\MI\train\S20\1\EEGdata.csv
+2025-06-11 22:15:16,175 - INFO - Extracted trial 1 from session 1 for subject S20
+2025-06-11 22:53:53,821 - INFO - Loading metadata from ../data/raw
+2025-06-11 22:53:59,203 - INFO - Loading trial 1 from session 1 for subject S20
+2025-06-11 22:53:59,203 - INFO - Loading EEG data from ../data/raw\MI\train\S20\1\EEGdata.csv
+2025-06-11 22:53:59,341 - INFO - Extracted trial 1 from session 1 for subject S20
+2025-06-11 22:54:45,652 - INFO - Loading metadata from ../data/raw
