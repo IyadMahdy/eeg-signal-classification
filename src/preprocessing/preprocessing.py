@@ -15,9 +15,7 @@ from utils.load_data import load_trial, load_metadata, get_dataset_split
 # Configure module-level logger
 logger = logging.getLogger(__name__)
 # At startup of your application configure handlers/levels:
-# logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
-
-base_path = '../data'
+logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 
 def get_bad_mask(df, acc_thresh=15, gyro_thresh=5, battery_thresh=15):
     """
