@@ -2,7 +2,11 @@ import pytest
 import pandas as pd
 from unittest import mock
 from unittest.mock import patch, MagicMock
-from src.utils import load_data
+import sys
+import os
+# Add src directory to sys.path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../src")))
+from utils.load_data import load_trial, load_metadata, get_dataset_split
 
 
 # Sample metadata mock

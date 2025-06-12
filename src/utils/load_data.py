@@ -10,12 +10,16 @@ SAMPLES_PER_TRIAL = {
 
 
 # Setup logging
-LOG_DIR = "../outputs/logs"
+# Ensure the log directory exists
+log_dir = os.path.join(os.getcwd(), 'outputs', 'logs')
+os.makedirs(log_dir, exist_ok=True)
+
+log_path = os.path.join(log_dir, 'load_data.log')
+
 logging.basicConfig(
-    filename=os.path.join(LOG_DIR, "load_data.log"),
-    filemode='a',
+    filename=log_path,
     level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s'
+    format='%(asctime)s:%(levelname)s:%(message)s'
 )
 
 def load_metadata(base_path):
