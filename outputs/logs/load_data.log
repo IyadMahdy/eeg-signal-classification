@@ -1,0 +1,30 @@
+2025-06-12 11:32:50,170 - INFO - Loading metadata from ../data
+2025-06-12 11:32:50,253 - INFO - Loading EEG data from ../data\MI\validation\S31\1\EEGdata.csv
+2025-06-12 11:32:50,305 - INFO - Extracted trial 1 from session 1 for subject S31
+2025-06-12 11:56:02,438 - INFO - Loading EEG data from ../data\MI\validation\S31\1\EEGdata.csv
+2025-06-12 11:56:02,496 - INFO - Extracted trial 1 from session 1 for subject S31
+2025-06-12 12:29:39,758 - INFO - Loading metadata from ../data
+2025-06-12 12:29:39,777 - INFO - Loading EEG data from ../data\MI\validation\S31\1\EEGdata.csv
+2025-06-12 12:29:39,835 - INFO - Extracted trial 1 from session 1 for subject S31
+2025-06-12 12:29:40,461 - INFO - Loading EEG data from ../data\MI\validation\S31\1\EEGdata.csv
+2025-06-12 12:29:40,520 - INFO - Extracted trial 1 from session 1 for subject S31
+2025-06-12 12:32:40,038 - INFO - Loading metadata from ../data
+2025-06-12 12:32:40,046 - INFO - Loading EEG data from ../data\MI\validation\S31\1\EEGdata.csv
+2025-06-12 12:32:40,088 - INFO - Extracted trial 1 from session 1 for subject S31
+2025-06-12 12:32:40,722 - INFO - Loading EEG data from ../data\MI\validation\S31\1\EEGdata.csv
+2025-06-12 12:32:40,765 - INFO - Extracted trial 1 from session 1 for subject S31
+2025-06-12 13:32:32,671 - INFO - Loading metadata from ../data
+2025-06-12 13:32:32,679 - INFO - Loading EEG data from ../data\MI\validation\S31\1\EEGdata.csv
+2025-06-12 13:32:32,747 - INFO - Extracted trial 1 from session 1 for subject S31
+2025-06-12 13:32:33,432 - INFO - Loading EEG data from ../data\MI\validation\S31\1\EEGdata.csv
+2025-06-12 13:32:33,479 - INFO - Extracted trial 1 from session 1 for subject S31
+2025-06-12 13:32:39,315 - INFO - Loading metadata from ../data
+2025-06-12 13:32:39,322 - INFO - Loading EEG data from ../data\MI\validation\S31\1\EEGdata.csv
+2025-06-12 13:32:39,375 - INFO - Extracted trial 1 from session 1 for subject S31
+2025-06-12 13:32:40,014 - INFO - Loading EEG data from ../data\MI\validation\S31\1\EEGdata.csv
+2025-06-12 13:32:40,064 - INFO - Extracted trial 1 from session 1 for subject S31
+2025-06-12 13:33:08,945 - INFO - Loading metadata from ../data
+2025-06-12 13:33:08,952 - INFO - Loading EEG data from ../data\MI\validation\S31\1\EEGdata.csv
+2025-06-12 13:33:08,994 - INFO - Extracted trial 1 from session 1 for subject S31
+2025-06-12 13:33:09,643 - INFO - Loading EEG data from ../data\MI\validation\S31\1\EEGdata.csv
+2025-06-12 13:33:09,703 - INFO - Extracted trial 1 from session 1 for subject S31
