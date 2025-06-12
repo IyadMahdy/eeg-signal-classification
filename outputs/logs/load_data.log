@@ -1353,3 +1353,58 @@
 2025-06-11 19:18:01,418 - INFO - Loading metadata from ../data
 2025-06-11 19:18:03,252 - INFO - Loading EEG data from c:\Users\PC\Desktop\EEG\eeg-signal-classification\data\MI\train\S1\1\EEGdata.csv
 2025-06-11 19:18:03,323 - INFO - Extracted trial 1 from session 1 for subject S1
+2025-06-12 14:53:33,730 - INFO - Loading metadata from ../data
+2025-06-12 14:53:33,977 - INFO - Loading EEG data from c:\Users\PC\Desktop\EEG\eeg-signal-classification\data\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:53:34,085 - INFO - Extracted trial 1 from session 1 for subject S1
+2025-06-12 15:00:11,031 - INFO - Loading trial 3 from session 1 for subject S20
+2025-06-12 15:00:11,031 - INFO - Loading EEG data from ../data/raw\MI\train\S20\1\EEGdata.csv
+2025-06-12 15:00:11,032 - ERROR - Failed to load EEG file: [Errno 2] No such file or directory: '../data/raw\\MI\\train\\S20\\1\\EEGdata.csv'
+2025-06-12 15:00:11,032 - ERROR - Failed to load trial: [Errno 2] No such file or directory: '../data/raw\\MI\\train\\S20\\1\\EEGdata.csv'
+2025-06-12 15:00:26,940 - INFO - Loading trial 3 from session 1 for subject S20
+2025-06-12 15:00:26,940 - INFO - Loading EEG data from ../data/raw\MI\train\S20\1\EEGdata.csv
+2025-06-12 15:00:26,941 - ERROR - Failed to load EEG file: [Errno 2] No such file or directory: '../data/raw\\MI\\train\\S20\\1\\EEGdata.csv'
+2025-06-12 15:00:26,941 - ERROR - Failed to load trial: [Errno 2] No such file or directory: '../data/raw\\MI\\train\\S20\\1\\EEGdata.csv'
+2025-06-12 15:09:42,962 - INFO - Loading metadata from ../data
+2025-06-12 15:09:47,503 - INFO - Loading trial 3 from session 1 for subject S1
+2025-06-12 15:09:47,504 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 15:09:47,504 - ERROR - Failed to load EEG file: [Errno 2] No such file or directory: '../data/raw\\MI\\train\\S1\\1\\EEGdata.csv'
+2025-06-12 15:09:47,504 - ERROR - Failed to load trial: [Errno 2] No such file or directory: '../data/raw\\MI\\train\\S1\\1\\EEGdata.csv'
+2025-06-12 15:10:25,109 - INFO - Loading trial 3 from session 1 for subject S1
+2025-06-12 15:10:25,109 - INFO - Loading EEG data from ../data\MI\train\S1\1\EEGdata.csv
+2025-06-12 15:10:25,200 - INFO - Extracted trial 3 from session 1 for subject S1
+2025-06-12 15:11:09,120 - INFO - Loading trial 3 from session 1 for subject S1
+2025-06-12 15:11:09,121 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 15:11:09,121 - ERROR - Failed to load EEG file: [Errno 2] No such file or directory: '../data/raw\\MI\\train\\S1\\1\\EEGdata.csv'
+2025-06-12 15:11:09,121 - ERROR - Failed to load trial: [Errno 2] No such file or directory: '../data/raw\\MI\\train\\S1\\1\\EEGdata.csv'
+2025-06-12 15:11:18,979 - INFO - Loading trial 3 from session 1 for subject S1
+2025-06-12 15:11:18,980 - INFO - Loading EEG data from ../data\MI\train\S1\1\EEGdata.csv
+2025-06-12 15:11:19,068 - INFO - Extracted trial 3 from session 1 for subject S1
+2025-06-12 15:18:34,627 - INFO - Loading metadata from ../data
+2025-06-12 15:18:34,857 - INFO - Loading trial 3 from session 1 for subject S1
+2025-06-12 15:18:34,857 - INFO - Loading EEG data from ../data\MI\train\S1\1\EEGdata.csv
+2025-06-12 15:18:34,978 - INFO - Extracted trial 3 from session 1 for subject S1
+2025-06-12 15:35:03,273 - INFO - Loading metadata from ../data
+2025-06-12 15:35:03,288 - INFO - Loading EEG data from ../data\MI\validation\S31\1\EEGdata.csv
+2025-06-12 15:35:03,379 - INFO - Extracted trial 1 from session 1 for subject S31
+2025-06-12 15:35:04,372 - INFO - Loading EEG data from ../data\MI\validation\S31\1\EEGdata.csv
+2025-06-12 15:35:04,453 - INFO - Extracted trial 1 from session 1 for subject S31
+2025-06-12 15:35:06,106 - INFO - Loading metadata from ../data/raw
+2025-06-12 15:35:06,107 - ERROR - Failed to load metadata: [Errno 2] No such file or directory: '../data/raw\\train.csv'
+2025-06-12 15:35:45,459 - INFO - Loading metadata from ../data
+2025-06-12 15:35:55,530 - INFO - Loading metadata from ../data
+2025-06-12 15:35:55,542 - INFO - Loading EEG data from ../data\MI\validation\S31\1\EEGdata.csv
+2025-06-12 15:35:55,618 - INFO - Extracted trial 1 from session 1 for subject S31
+2025-06-12 15:35:56,600 - INFO - Loading EEG data from ../data\MI\validation\S31\1\EEGdata.csv
+2025-06-12 15:35:56,671 - INFO - Extracted trial 1 from session 1 for subject S31
+2025-06-12 15:35:57,784 - INFO - Loading metadata from ../data
+2025-06-12 15:35:58,377 - INFO - Loading trial 5 from session 1 for subject S1
+2025-06-12 15:35:58,378 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 15:35:58,378 - ERROR - Failed to load EEG file: [Errno 2] No such file or directory: '../data/raw\\MI\\train\\S1\\1\\EEGdata.csv'
+2025-06-12 15:35:58,378 - ERROR - Failed to load trial: [Errno 2] No such file or directory: '../data/raw\\MI\\train\\S1\\1\\EEGdata.csv'
+2025-06-12 15:36:05,854 - INFO - Loading trial 5 from session 1 for subject S1
+2025-06-12 15:36:05,855 - INFO - Loading EEG data from ../data\MI\train\S1\1\EEGdata.csv
+2025-06-12 15:36:05,952 - INFO - Extracted trial 5 from session 1 for subject S1
+2025-06-12 15:36:20,219 - INFO - Loading trial 3 from session 1 for subject S1
+2025-06-12 15:36:20,220 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 15:36:20,220 - ERROR - Failed to load EEG file: [Errno 2] No such file or directory: '../data/raw\\MI\\train\\S1\\1\\EEGdata.csv'
+2025-06-12 15:36:20,220 - ERROR - Failed to load trial: [Errno 2] No such file or directory: '../data/raw\\MI\\train\\S1\\1\\EEGdata.csv'
