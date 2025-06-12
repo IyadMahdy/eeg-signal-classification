@@ -11,7 +11,7 @@ import os
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../src")))
 from utils.load_data import load_trial, load_metadata, get_dataset_split
-
+base_path=r'D:\Stuff\Study\MTC_AIC3'
 # Configure module-level logger
 logger = logging.getLogger(__name__)
 # At startup of your application configure handlers/levels:
