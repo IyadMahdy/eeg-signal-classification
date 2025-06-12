@@ -9763,3 +9763,296 @@
 2025-06-12 00:34:50,166 - INFO - Extracted trial 9 from session 8 for subject S30
 2025-06-12 00:34:50,242 - INFO - Loading EEG data from ../data/raw\SSVEP\train\S30\8\EEGdata.csv
 2025-06-12 00:34:50,320 - INFO - Extracted trial 10 from session 8 for subject S30
+2025-06-12 13:18:57,972 - INFO - Loading metadata from ../data/raw
+2025-06-12 13:20:18,906 - ERROR - Failed to load trial: join() argument must be str, bytes, or os.PathLike object, not 'DataFrame'
+2025-06-12 13:20:26,586 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 13:20:26,781 - INFO - Extracted trial 1 from session 1 for subject S1
+2025-06-12 13:24:43,079 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 13:24:43,152 - INFO - Extracted trial 1 from session 1 for subject S1
+2025-06-12 13:29:38,202 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 13:29:38,340 - INFO - Extracted trial 1 from session 1 for subject S1
+2025-06-12 13:29:42,490 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 13:29:42,662 - INFO - Extracted trial 1 from session 1 for subject S1
+2025-06-12 13:32:47,617 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 13:32:47,777 - INFO - Extracted trial 1 from session 1 for subject S1
+2025-06-12 13:33:17,452 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 13:33:17,588 - INFO - Extracted trial 1 from session 1 for subject S1
+2025-06-12 13:33:56,175 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 13:33:56,314 - INFO - Extracted trial 6 from session 1 for subject S1
+2025-06-12 13:34:56,148 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 13:34:56,228 - INFO - Extracted trial 6 from session 1 for subject S1
+2025-06-12 13:36:07,598 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 13:36:07,776 - INFO - Extracted trial 6 from session 1 for subject S1
+2025-06-12 13:36:25,847 - INFO - Loading EEG data from ../data/raw\MI\train\S1\3\EEGdata.csv
+2025-06-12 13:36:25,931 - INFO - Extracted trial 1 from session 3 for subject S1
+2025-06-12 13:36:58,320 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 13:36:58,481 - INFO - Extracted trial 1 from session 1 for subject S1
+2025-06-12 13:37:37,465 - INFO - Loading EEG data from ../data/raw\MI\train\S1\3\EEGdata.csv
+2025-06-12 13:37:37,613 - INFO - Extracted trial 1 from session 3 for subject S1
+2025-06-12 13:38:31,117 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 13:38:31,250 - INFO - Extracted trial 2 from session 1 for subject S1
+2025-06-12 13:38:46,337 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 13:38:46,424 - INFO - Extracted trial 1 from session 1 for subject S1
+2025-06-12 13:39:32,733 - INFO - Loading EEG data from ../data/raw\MI\train\S8\4\EEGdata.csv
+2025-06-12 13:39:32,916 - INFO - Extracted trial 10 from session 4 for subject S8
+2025-06-12 13:40:17,357 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 13:40:17,473 - INFO - Extracted trial 1 from session 1 for subject S1
+2025-06-12 13:41:43,956 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 13:41:44,086 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 13:50:24,562 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 13:50:24,724 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 13:50:40,913 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 13:50:41,018 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 13:54:59,681 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 13:54:59,757 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 13:55:09,599 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 13:55:09,744 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 13:55:29,920 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 13:55:30,070 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 13:55:49,237 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 13:55:49,392 - INFO - Extracted trial 2 from session 1 for subject S1
+2025-06-12 13:55:55,964 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 13:55:56,090 - INFO - Extracted trial 1 from session 1 for subject S1
+2025-06-12 13:56:00,408 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 13:56:00,576 - INFO - Extracted trial 5 from session 1 for subject S1
+2025-06-12 13:56:13,427 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 13:56:13,501 - INFO - Extracted trial 5 from session 1 for subject S1
+2025-06-12 13:56:17,600 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 13:56:17,742 - INFO - Extracted trial 3 from session 1 for subject S1
+2025-06-12 13:58:56,047 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 13:58:56,217 - INFO - Extracted trial 3 from session 1 for subject S1
+2025-06-12 13:59:50,451 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 13:59:50,653 - INFO - Extracted trial 3 from session 1 for subject S1
+2025-06-12 13:59:59,022 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 13:59:59,175 - INFO - Extracted trial 1 from session 1 for subject S1
+2025-06-12 14:00:52,892 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:00:53,010 - INFO - Extracted trial 1 from session 1 for subject S1
+2025-06-12 14:10:18,120 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:10:18,222 - INFO - Extracted trial 1 from session 1 for subject S1
+2025-06-12 14:10:23,211 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:10:23,335 - INFO - Extracted trial 1 from session 1 for subject S1
+2025-06-12 14:11:32,402 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:11:32,524 - INFO - Extracted trial 1 from session 1 for subject S1
+2025-06-12 14:11:41,513 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:11:41,667 - INFO - Extracted trial 2 from session 1 for subject S1
+2025-06-12 14:12:06,918 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:12:07,054 - INFO - Extracted trial 2 from session 1 for subject S1
+2025-06-12 14:12:17,613 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:12:17,710 - INFO - Extracted trial 2 from session 1 for subject S1
+2025-06-12 14:12:21,899 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:12:22,002 - INFO - Extracted trial 2 from session 1 for subject S1
+2025-06-12 14:12:45,984 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:12:46,054 - INFO - Extracted trial 2 from session 1 for subject S1
+2025-06-12 14:16:38,931 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 14:16:39,050 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 14:16:49,010 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 14:16:49,175 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 14:16:54,150 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:16:54,262 - INFO - Extracted trial 2 from session 1 for subject S1
+2025-06-12 14:16:59,522 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 14:16:59,591 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 14:19:09,592 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 14:19:09,667 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 14:19:13,331 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 14:19:13,481 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 14:19:17,049 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 14:19:17,116 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 14:19:37,604 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 14:19:37,680 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 14:21:34,107 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 14:21:34,198 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 14:21:39,343 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 14:21:39,428 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 14:21:43,948 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 14:21:44,031 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 14:22:51,636 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 14:22:51,757 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 14:22:57,415 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 14:22:57,531 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 14:23:17,323 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 14:23:17,471 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 14:24:04,873 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 14:24:05,001 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 14:24:49,864 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 14:24:49,952 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 14:25:04,034 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 14:25:04,123 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 14:26:11,157 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 14:26:11,226 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 14:26:21,466 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 14:26:21,618 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 14:26:43,739 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 14:26:43,867 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 14:26:56,255 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 14:26:56,334 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 14:27:05,760 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:27:05,846 - INFO - Extracted trial 2 from session 1 for subject S1
+2025-06-12 14:27:44,634 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:27:44,762 - INFO - Extracted trial 2 from session 1 for subject S1
+2025-06-12 14:28:07,882 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 14:28:07,977 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 14:28:31,930 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 14:28:32,022 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 14:28:47,193 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:28:47,289 - INFO - Extracted trial 2 from session 1 for subject S1
+2025-06-12 14:28:56,196 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:28:56,295 - INFO - Extracted trial 2 from session 1 for subject S1
+2025-06-12 14:29:05,212 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:29:05,293 - INFO - Extracted trial 2 from session 1 for subject S1
+2025-06-12 14:29:58,090 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:29:58,178 - INFO - Extracted trial 2 from session 1 for subject S1
+2025-06-12 14:30:22,453 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 14:30:22,539 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 14:30:34,270 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:30:34,395 - INFO - Extracted trial 2 from session 1 for subject S1
+2025-06-12 14:31:01,963 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:31:02,043 - INFO - Extracted trial 2 from session 1 for subject S1
+2025-06-12 14:32:14,454 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:32:14,547 - INFO - Extracted trial 2 from session 1 for subject S1
+2025-06-12 14:32:53,487 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 14:32:53,612 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 14:32:58,944 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 14:32:59,033 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 14:33:04,458 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 14:33:04,539 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 14:33:14,131 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 14:33:14,204 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 14:33:29,132 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:33:29,209 - INFO - Extracted trial 2 from session 1 for subject S1
+2025-06-12 14:33:53,222 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 14:33:53,331 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 14:34:03,725 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 14:34:03,809 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 14:34:28,304 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:34:28,386 - INFO - Extracted trial 4 from session 1 for subject S1
+2025-06-12 14:34:42,837 - INFO - Loading EEG data from ../data/raw\MI\train\S7\3\EEGdata.csv
+2025-06-12 14:34:42,977 - INFO - Extracted trial 1 from session 3 for subject S7
+2025-06-12 14:34:53,523 - INFO - Loading EEG data from ../data/raw\MI\train\S7\3\EEGdata.csv
+2025-06-12 14:34:53,602 - INFO - Extracted trial 1 from session 3 for subject S7
+2025-06-12 14:36:43,544 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:36:43,695 - INFO - Extracted trial 2 from session 1 for subject S1
+2025-06-12 14:38:22,802 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:38:22,973 - INFO - Extracted trial 2 from session 1 for subject S1
+2025-06-12 14:38:35,646 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:38:35,775 - INFO - Extracted trial 2 from session 1 for subject S1
+2025-06-12 14:39:08,470 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:39:08,558 - INFO - Extracted trial 2 from session 1 for subject S1
+2025-06-12 14:39:14,758 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:39:14,875 - INFO - Extracted trial 2 from session 1 for subject S1
+2025-06-12 14:39:21,528 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:39:21,641 - INFO - Extracted trial 2 from session 1 for subject S1
+2025-06-12 14:39:31,149 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:39:31,251 - INFO - Extracted trial 2 from session 1 for subject S1
+2025-06-12 14:44:06,470 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:44:06,553 - INFO - Extracted trial 1 from session 1 for subject S1
+2025-06-12 14:45:09,880 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:45:09,972 - INFO - Extracted trial 1 from session 1 for subject S1
+2025-06-12 14:51:02,484 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:51:02,566 - INFO - Extracted trial 1 from session 1 for subject S1
+2025-06-12 14:51:44,515 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:51:44,682 - INFO - Extracted trial 1 from session 1 for subject S1
+2025-06-12 14:52:46,570 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:52:46,679 - INFO - Extracted trial 2 from session 1 for subject S1
+2025-06-12 14:52:50,135 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:52:50,277 - INFO - Extracted trial 3 from session 1 for subject S1
+2025-06-12 14:53:42,404 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:53:42,549 - INFO - Extracted trial 3 from session 1 for subject S1
+2025-06-12 14:54:02,378 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:54:02,497 - INFO - Extracted trial 3 from session 1 for subject S1
+2025-06-12 14:54:35,632 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:54:35,706 - INFO - Extracted trial 3 from session 1 for subject S1
+2025-06-12 14:54:44,567 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:54:44,681 - INFO - Extracted trial 3 from session 1 for subject S1
+2025-06-12 14:54:53,260 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:54:53,342 - INFO - Extracted trial 3 from session 1 for subject S1
+2025-06-12 14:55:08,765 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:55:08,858 - INFO - Extracted trial 3 from session 1 for subject S1
+2025-06-12 14:55:14,302 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:55:14,404 - INFO - Extracted trial 3 from session 1 for subject S1
+2025-06-12 14:55:18,258 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:55:18,342 - INFO - Extracted trial 3 from session 1 for subject S1
+2025-06-12 14:55:24,203 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:55:24,330 - INFO - Extracted trial 1 from session 1 for subject S1
+2025-06-12 14:55:27,886 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:55:27,978 - INFO - Extracted trial 3 from session 1 for subject S1
+2025-06-12 14:55:30,807 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 14:55:30,938 - INFO - Extracted trial 1 from session 1 for subject S1
+2025-06-12 14:55:34,125 - INFO - Loading EEG data from ../data/raw\MI\train\S1\6\EEGdata.csv
+2025-06-12 14:55:34,227 - INFO - Extracted trial 1 from session 6 for subject S1
+2025-06-12 14:56:31,311 - INFO - Loading EEG data from ../data/raw\MI\train\S1\6\EEGdata.csv
+2025-06-12 14:56:31,389 - INFO - Extracted trial 1 from session 6 for subject S1
+2025-06-12 14:59:29,761 - ERROR - Failed to load trial: expected str, bytes or os.PathLike object, not NoneType
+2025-06-12 15:00:11,092 - ERROR - Failed to load trial: expected str, bytes or os.PathLike object, not NoneType
+2025-06-12 15:00:24,936 - INFO - Loading EEG data from ../data/raw\MI\train\S1\6\EEGdata.csv
+2025-06-12 15:00:25,106 - INFO - Extracted trial 1 from session 6 for subject S1
+2025-06-12 15:00:30,849 - INFO - Loading EEG data from ../data/raw\MI\train\S1\6\EEGdata.csv
+2025-06-12 15:00:30,983 - INFO - Extracted trial 1 from session 6 for subject S1
+2025-06-12 15:00:44,722 - ERROR - Failed to load trial: expected str, bytes or os.PathLike object, not NoneType
+2025-06-12 15:01:26,920 - INFO - Loading EEG data from ../data/raw\MI\train\S1\6\EEGdata.csv
+2025-06-12 15:01:27,049 - INFO - Extracted trial 1 from session 6 for subject S1
+2025-06-12 15:02:13,554 - INFO - Loading EEG data from ../data/raw\MI\train\S1\6\EEGdata.csv
+2025-06-12 15:02:13,642 - INFO - Extracted trial 1 from session 6 for subject S1
+2025-06-12 15:02:19,158 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 15:02:19,218 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 15:02:22,188 - INFO - Loading EEG data from ../data/raw\MI\train\S2\3\EEGdata.csv
+2025-06-12 15:02:22,288 - INFO - Extracted trial 1 from session 3 for subject S2
+2025-06-12 15:02:27,268 - INFO - Loading EEG data from ../data/raw\MI\train\S2\3\EEGdata.csv
+2025-06-12 15:02:27,399 - INFO - Extracted trial 1 from session 3 for subject S2
+2025-06-12 15:02:31,231 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 15:02:31,300 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 15:04:00,250 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 15:04:00,386 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 15:06:24,166 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 15:06:24,294 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 15:07:52,307 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 15:07:52,400 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 15:08:16,794 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 15:08:16,955 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 15:08:21,007 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 15:08:21,079 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 15:22:57,121 - INFO - Loading EEG data from ../data/raw\MI\train\S1\1\EEGdata.csv
+2025-06-12 15:22:57,227 - INFO - Extracted trial 1 from session 1 for subject S1
+2025-06-12 15:23:31,642 - INFO - Loading EEG data from ../data/raw\MI\train\S1\6\EEGdata.csv
+2025-06-12 15:23:31,734 - INFO - Extracted trial 1 from session 6 for subject S1
+2025-06-12 15:25:28,078 - INFO - Loading EEG data from ../data/raw\MI\train\S1\6\EEGdata.csv
+2025-06-12 15:25:28,172 - INFO - Extracted trial 1 from session 6 for subject S1
+2025-06-12 15:39:20,292 - INFO - Loading EEG data from ../data/raw\MI\train\S1\6\EEGdata.csv
+2025-06-12 15:39:20,386 - INFO - Extracted trial 1 from session 6 for subject S1
+2025-06-12 15:40:55,601 - INFO - Loading EEG data from ../data/raw\MI\train\S3\5\EEGdata.csv
+2025-06-12 15:40:55,751 - INFO - Extracted trial 1 from session 5 for subject S3
+2025-06-12 15:41:09,154 - INFO - Loading EEG data from ../data/raw\MI\train\S1\6\EEGdata.csv
+2025-06-12 15:41:09,299 - INFO - Extracted trial 1 from session 6 for subject S1
+2025-06-12 15:43:56,963 - INFO - Loading EEG data from ../data/raw\MI\train\S7\3\EEGdata.csv
+2025-06-12 15:43:57,053 - INFO - Extracted trial 1 from session 3 for subject S7
+2025-06-12 15:50:21,724 - INFO - Loading EEG data from ../data/raw\MI\train\S1\6\EEGdata.csv
+2025-06-12 15:50:21,892 - INFO - Extracted trial 1 from session 6 for subject S1
+2025-06-12 15:50:43,978 - INFO - Loading EEG data from ../data/raw\MI\train\S1\6\EEGdata.csv
+2025-06-12 15:50:44,081 - INFO - Extracted trial 1 from session 6 for subject S1
+2025-06-12 15:50:58,292 - INFO - Loading EEG data from ../data/raw\MI\train\S1\6\EEGdata.csv
+2025-06-12 15:50:58,388 - INFO - Extracted trial 1 from session 6 for subject S1
+2025-06-12 16:08:21,877 - INFO - Loading EEG data from ../data/raw\MI\train\S1\6\EEGdata.csv
+2025-06-12 16:08:21,994 - INFO - Extracted trial 1 from session 6 for subject S1
+2025-06-12 16:08:52,021 - INFO - Loading EEG data from ../data/raw\MI\train\S1\6\EEGdata.csv
+2025-06-12 16:08:52,150 - INFO - Extracted trial 1 from session 6 for subject S1
+2025-06-12 16:10:09,050 - INFO - Loading EEG data from ../data/raw\MI\train\S1\6\EEGdata.csv
+2025-06-12 16:10:09,182 - INFO - Extracted trial 1 from session 6 for subject S1
+2025-06-12 16:10:17,677 - INFO - Loading EEG data from ../data/raw\MI\train\S1\6\EEGdata.csv
+2025-06-12 16:10:17,786 - INFO - Extracted trial 1 from session 6 for subject S1
+2025-06-12 16:10:27,970 - INFO - Loading EEG data from ../data/raw\MI\train\S1\6\EEGdata.csv
+2025-06-12 16:10:28,078 - INFO - Extracted trial 1 from session 6 for subject S1
+2025-06-12 16:10:36,789 - INFO - Loading EEG data from ../data/raw\MI\train\S1\6\EEGdata.csv
+2025-06-12 16:10:36,907 - INFO - Extracted trial 1 from session 6 for subject S1
+2025-06-12 16:10:48,521 - INFO - Loading EEG data from ../data/raw\MI\train\S1\6\EEGdata.csv
+2025-06-12 16:10:48,635 - INFO - Extracted trial 1 from session 6 for subject S1
+2025-06-12 16:14:39,893 - INFO - Loading EEG data from ../data/raw\MI\train\S1\6\EEGdata.csv
+2025-06-12 16:14:39,998 - INFO - Extracted trial 1 from session 6 for subject S1
+2025-06-12 16:14:46,767 - INFO - Loading EEG data from ../data/raw\MI\train\S1\6\EEGdata.csv
+2025-06-12 16:14:46,962 - INFO - Extracted trial 1 from session 6 for subject S1
+2025-06-12 16:15:39,422 - INFO - Loading EEG data from ../data/raw\MI\train\S1\6\EEGdata.csv
+2025-06-12 16:15:39,565 - INFO - Extracted trial 1 from session 6 for subject S1
+2025-06-12 16:15:55,246 - INFO - Loading EEG data from ../data/raw\MI\train\S1\6\EEGdata.csv
+2025-06-12 16:15:55,372 - INFO - Extracted trial 1 from session 6 for subject S1
+2025-06-12 16:16:00,171 - INFO - Loading EEG data from ../data/raw\MI\train\S1\6\EEGdata.csv
+2025-06-12 16:16:00,279 - INFO - Extracted trial 1 from session 6 for subject S1
+2025-06-12 16:16:12,762 - INFO - Loading EEG data from ../data/raw\MI\train\S1\6\EEGdata.csv
+2025-06-12 16:16:12,867 - INFO - Extracted trial 1 from session 6 for subject S1
