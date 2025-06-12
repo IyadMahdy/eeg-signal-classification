@@ -18,12 +18,6 @@ logger = logging.getLogger(__name__)
 # logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 
 base_path = '../data'
-metadata = load_metadata(base_path)
-
-train = metadata['train']
-
-first_eeg = load_trial(train.iloc[0, :], 'train', base_path)
-first_eeg.head()
 
 def get_bad_mask(df, acc_thresh=15, gyro_thresh=5, battery_thresh=15):
     """
@@ -125,9 +119,7 @@ def plot_trial_with_annotations(row, fs=250, max_channels=8):
     plt.suptitle(f"EEG Trial: {row['subject_id']} | Task: {row['task']} | Session: {row['trial_session']} | Trial: {row['trial']}", fontsize=14)
     plt.tight_layout(rect=[0, 0, 1, 0.97])
     plt.show()
-
-plot_trial_with_annotations(train.iloc[50, :])
-
+    
 def preprocess_eeg_trial(row, use_case='time_domain', fs=250,
                          interpolation_kind='linear',
                          window_size_sec=2, stride_sec=0.5):
@@ -254,9 +246,6 @@ def plot_eeg_channels(eeg_data, fs=250, channel_names=None, figsize=(12, 10)):
     fig.tight_layout(rect=[0, 0, 1, 0.97])
     plt.show()
 
-cleaned_eeg = np.array(preprocess_eeg_trial(train.iloc[0, :], use_case='frequency_domain', interpolation_kind='nearest', window_size_sec=2, stride_sec=0.5))
-plot_eeg_channels(cleaned_eeg, fs=250)
-
 def bandpass_filter(data, lowcut, highcut, fs, order=4):
     """
     Apply zero-phase Butterworth bandpass filter to multi-channel signal.
@@ -346,10 +335,6 @@ def preprocess_time_domain(eeg_data, fs=250, lowcut=1, highcut=45,
     logger.info("Time-domain preprocessing completed")
     return eeg, fs
 
-trial_time = np.array(preprocess_eeg_trial(train.iloc[500, :], use_case='time_domain', window_size_sec=2, stride_sec=0.5))
-trial_preprocessed_time = preprocess_time_domain(trial_time[1], fs=250, lowcut=1, highcut=45, downsample_to=100, clip_thresh=None)[0]
-plot_eeg_channels(trial_preprocessed_time, fs=100)
-
 def preprocess_frequency_domain(eeg_data, fs=250, lowcut=1, highcut=45,
                                 downsample_to=None, clip_thresh=None):
     """
@@ -372,10 +357,6 @@ def preprocess_frequency_domain(eeg_data, fs=250, lowcut=1, highcut=45,
     logger.info("Frequency-domain preprocessing done")
     return eeg, fs
 
-trial_freq = np.array(preprocess_eeg_trial(train.iloc[1, :], use_case='frequency_domain', interpolation_kind='nearest'))
-trial_preprocessed_freq = preprocess_frequency_domain(trial_freq, fs=250, lowcut=1, highcut=45, downsample_to=100, clip_thresh=None)[0]
-plot_eeg_channels(trial_preprocessed_freq, fs=100)
-
 def preprocess_deep_learning(eeg_data, fs=250, lowcut=1, highcut=45, clip_thresh=None):
     """
     Preprocess EEG for deep learning workflows:
@@ -397,11 +378,6 @@ def preprocess_deep_learning(eeg_data, fs=250, lowcut=1, highcut=45, clip_thresh
     logger.info("Deep-learning preprocessing done")
     return eeg, fs
 
-
-trial_deep = np.array(preprocess_eeg_trial(train.iloc[200, :], use_case='deep_learning', interpolation_kind='nearest')[0])
-trial_preprocessed_deep = preprocess_frequency_domain(trial_deep, fs=250, lowcut=1, highcut=45, downsample_to=100, clip_thresh=10)[0]
-plot_eeg_channels(trial_preprocessed_freq, fs=100)
-
 def preprocess_eeg_with_mne_time_domain(
     row,
     fs=250,
@@ -544,150 +520,6 @@ def preprocess_eeg_with_mne_time_domain(
     logger.info("Generated %d windows (each %d samples)", windows.shape[0], win_len)
 
     return windows, final_fs
-def preprocess_eeg_with_mne_time_domain(
-    row,
-    fs=250,
-    window_size_sec=2.0,
-    stride_sec=0.5,
-    ch_names=None,
-    l_freq=1.,
-    h_freq=45.,
-    notch_freq=50.,
-    resample_to=None,
-    max_bad_ratio=0.2,
-    zscore=True,
-    high_amp_thresh=5.0
-):
-    """
-    Preprocess EEG trial data using MNE for time-domain feature extraction.
-
-    Steps:
-        1. Load raw EEG for given trial (handles interpolation of bad samples).
-        2. Create MNE RawArray and set average reference.
-        3. Apply notch (e.g., power line removal) and bandpass filtering.
-        4. Resample the data if specified.
-        5. Remove high-amplitude artifacts by zeroing out extreme deviations.
-        6. Optionally z-score normalize each channel.
-        7. Segment into overlapping windows, filtering out windows with too many bad samples.
-
-    Parameters
-    ----------
-    row : pd.Series
-        Metadata for a single trial (subject, session, trial, etc.)
-    fs : int
-        Original sampling frequency of the trial.
-    window_size_sec : float
-        Length of each segment in seconds.
-    stride_sec : float
-        Time step between consecutive segments in seconds.
-    ch_names : list[str] or None
-        Custom channel names. If None, defaults to ["Ch1", "Ch2", ..., "ChN"].
-    l_freq : float
-        Low cutoff frequency for bandpass filtering.
-    h_freq : float
-        High cutoff frequency for bandpass filtering.
-    notch_freq : float or list
-        Frequency (or list) to notch filter (e.g., power-line noise at 50 or 60 Hz).
-    resample_to : int or None
-        If specified, resample data to this sampling rate.
-    max_bad_ratio : float
-        Maximum allowed fraction of bad samples per window (0–1).
-    zscore : bool
-        If True, normalize channels to zero mean and unit variance.
-    high_amp_thresh : float
-        Artifact threshold in standard deviations—values beyond this are zeroed.
-
-    Returns
-    -------
-    windows : np.ndarray
-        3D array of shape (n_windows, n_channels, window_samples).
-    final_fs : int
-        Sampling rate after resampling.
-    """
-    logger.info("Starting MNE time-domain preprocessing for trial id=%s", row['id'])
-
-    dataset = get_dataset_split(row['id'])
-    eeg_data = load_trial(row, dataset, base_path)
-    bad_mask = get_bad_mask(eeg_data)
-    eeg = eeg_data.iloc[:, 1:9].values.T  # shape (channels, time)
-    logger.debug("Loaded EEG data shape: %s", eeg.shape)
-
-    # Interpolate bad samples
-    eeg_cleaned = eeg.copy()
-    for ch in range(eeg.shape[0]):
-        good_idx = ~bad_mask
-        if good_idx.sum() < 2:
-            eeg_cleaned[ch] = 0.0
-            logger.warning("Channel %d has insufficient good data—filled with zeros", ch)
-        else:
-            interp = interpolate.interp1d(
-                np.flatnonzero(good_idx),
-                eeg[ch, good_idx],
-                kind='linear',
-                fill_value='extrapolate'
-            )
-            eeg_cleaned[ch] = interp(np.arange(eeg.shape[1]))
-    logger.info("Interpolation of bad samples completed")
-
-    if ch_names is None:
-        ch_names = [f"Ch{i+1}" for i in range(eeg.shape[0])]
-    info = mne.create_info(ch_names=ch_names, sfreq=fs, ch_types='eeg')
-    raw = mne.io.RawArray(eeg_cleaned, info)
-
-    raw.set_eeg_reference('average', projection=False)
-    raw.notch_filter(freqs=notch_freq, verbose=False)
-    raw.filter(l_freq=l_freq, h_freq=h_freq, verbose=False)
-    logger.debug("Notch and bandpass (%s–%s Hz) filters applied", notch_freq, (l_freq, h_freq))
-
-    if resample_to:
-        raw.resample(resample_to, verbose=False)
-        logger.info("Resampled data from %s Hz to %s Hz", fs, resample_to)
-
-    final_fs = int(raw.info['sfreq'])
-    eeg_proc = raw.get_data()
-    logger.debug("Raw data array shape after filtering: %s", eeg_proc.shape)
-
-    # Remove high-amplitude artifacts
-    stds = np.std(eeg_proc, axis=1, keepdims=True)
-    artifact_mask = np.abs(eeg_proc) > (high_amp_thresh * stds)
-    eeg_proc[artifact_mask] = 0.0
-    logger.info("Zeroed out high-amplitude artifacts beyond %s stddev", high_amp_thresh)
-
-    # Z-score normalization
-    if zscore:
-        means = np.mean(eeg_proc, axis=1, keepdims=True)
-        stds = np.std(eeg_proc, axis=1, keepdims=True) + 1e-8
-        eeg_proc = (eeg_proc - means) / stds
-        logger.info("Z-score normalization applied per channel")
-
-    if resample_to:
-        # Downsample bad_mask to match new sampling rate
-        resampled_mask = signal.resample(bad_mask.astype(float), eeg_proc.shape[1])
-        bad_mask = resampled_mask > 0.5
-        logger.debug("Resampled bad mask to match data length: %s", bad_mask.shape)
-
-    win_len = int(window_size_sec * final_fs)
-    stride_len = int(stride_sec * final_fs)
-    windows = []
-    logger.info("Segmenting data into windows of %s samples (stride %s)", win_len, stride_len)
-
-    for start in range(0, eeg_proc.shape[1] - win_len + 1, stride_len):
-        end = start + win_len
-        window_bad_ratio = bad_mask[start:end].mean()
-        if window_bad_ratio <= max_bad_ratio:
-            windows.append(eeg_proc[:, start:end])
-        else:
-            logger.debug(
-                "Dropped window %d–%d due to high bad ratio %.2f",
-                start, end, window_bad_ratio
-            )
-
-    windows = np.stack(windows)
-    logger.info("Generated %d windows (each %d samples)", windows.shape[0], win_len)
-
-    return windows, final_fs
-
-preprocess_eeg_with_mne_time_domain(train.iloc[50, :], fs=250, window_size_sec=2.0, stride_sec=2.0, ch_names=None, l_freq=1., h_freq=45., notch_freq=50., resample_to=100, max_bad_ratio=0.1)[0].shape
 
 def preprocess_eeg_with_mne_freq_domain(
     row,
