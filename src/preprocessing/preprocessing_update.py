@@ -109,7 +109,8 @@ def preprocess_and_epoch_trial(
     notch_freq=50,
     epoch_length=1.0,
     epoch_overlap=0.0,
-    min_epoch_duration=0.5,
+    tmin=1.5,
+    tmax=8,
     reject_bad_epochs=True,
     reference='average'
 ):
@@ -160,6 +161,9 @@ def preprocess_and_epoch_trial(
 
     logging.info("Applying bandpass filter (%.1f–%.1f Hz)...", l_freq, h_freq)
     raw.filter(l_freq=l_freq, h_freq=h_freq, picks='eeg', verbose=False)
+    
+    logging.info(f"Cropping to {tmin}-{tmax} seconds...")
+    raw.crop(tmin=tmin, tmax=tmax)
 
     logging.info("Resampling to %.1f Hz...", resample_sfreq)
     raw_resampled = raw.copy().resample(resample_sfreq, npad='auto', method='fft')
@@ -176,6 +180,7 @@ def preprocess_and_epoch_trial(
         detrend=0,
         reject_by_annotation=reject_bad_epochs,
         verbose=False,
+        preload=True
     )
 
     if len(epochs) == 0:
