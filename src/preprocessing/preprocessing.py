@@ -244,38 +244,62 @@ def plot_eeg_channels(eeg_data, fs=250, channel_names=None, figsize=(12, 10)):
     fig.tight_layout(rect=[0, 0, 1, 0.97])
     plt.show()
 
-def bandpass_filter(data, lowcut, highcut, fs, order=4):
+def bandpass_filter(data, lowcut, highcut, fs, order=4, min_length=30):
     """
-    Apply zero-phase Butterworth bandpass filter to multi-channel signal.
+    Apply zero-phase Butterworth bandpass filter to EEG data.
+    If trial is too short, it will be skipped or zero-padded.
 
     Args:
-        data (ndarray): shape (n_ch, n_times)
-        lowcut (float), highcut (float): cutoff frequencies
-        fs (int): sampling rate
-        order (int): filter order
+        data (pd.DataFrame or np.ndarray): EEG signal (n_times, n_channels)
+        lowcut (float): Low cutoff frequency (Hz)
+        highcut (float): High cutoff frequency (Hz)
+        fs (int): Sampling rate (Hz)
+        order (int): Filter order
+        min_length (int): Minimum number of timepoints required for filtering
 
     Returns:
-        filtered (ndarray): same shape as input
+        np.ndarray: Filtered EEG signal (n_times, n_channels) or None if too short
     """
-    logger.debug("Bandpass filtering: %s–%s Hz, order %d", lowcut, highcut, order)
+    from scipy.signal import butter, filtfilt
+    import numpy as np
+
+    logger.debug("Bandpass filtering: %.2f–%.2f Hz, order %d", lowcut, highcut, order)
+
+    # Drop irrelevant columns if it's a DataFrame
+    if isinstance(data, pd.DataFrame):
+        non_eeg_columns = ['Time', 'AccX', 'AccY', 'AccZ', 'Gyro1', 'Gyro2', 'Gyro3', 'Battery', 'Counter', 'Validation']
+        eeg_data = data.drop(columns=[col for col in non_eeg_columns if col in data.columns], errors='ignore').to_numpy()
+    else:
+        eeg_data = data
+
+    eeg_data = eeg_data.T  # (n_ch, n_times)
+    n_ch, n_times = eeg_data.shape
+
     nyq = fs / 2
-    b, a = signal.butter(order, [lowcut / nyq, highcut / nyq], btype='band')
-    filtered = signal.filtfilt(b, a, data, axis=1)
+    b, a = butter(order, [lowcut / nyq, highcut / nyq], btype='band')
+    padlen = 3 * max(len(a), len(b))
+
+    # Handle too-short signals
+    if n_times <= padlen:
+        logger.warning(f"Skipping trial: too short for filtering ({n_times} < {padlen})")
+        return None  # or return np.zeros_like(eeg_data.T) to pad instead
+
+    filtered = filtfilt(b, a, eeg_data, axis=1)
     logger.info("Filtering complete")
-    return filtered
+    return filtered.T  # back to (n_times, n_ch)
+
 
 
 def remove_dc_offset(data):
     """
-    Subtract channel-wise mean (DC offset)
-
-    Args:
-        data (ndarray): shape (n_ch, n_times)
-    Returns:
-        dc_removed (ndarray)
+    Subtract channel-wise mean (DC offset).
+    Converts to NumPy array if input is a DataFrame.
     """
-    logger.debug("Removing DC offset")
-    return data - np.mean(data, axis=1, keepdims=True)
+    if isinstance(data, pd.DataFrame):
+        # Keep only numeric EEG channels and convert to NumPy
+        data = data.select_dtypes(include=[np.number]).to_numpy()
+    return data - np.mean(data, axis=0, keepdims=True)
+
 
 def standardize(data):
     """
