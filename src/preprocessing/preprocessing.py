@@ -17,6 +17,8 @@ logger = logging.getLogger(__name__)
 # At startup of your application configure handlers/levels:
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 
+base_path = '../../data/raw'
+
 def get_bad_mask(df, acc_thresh=15, gyro_thresh=5, battery_thresh=15):
     """
     Generate a boolean mask of "bad" time points in trial data.
